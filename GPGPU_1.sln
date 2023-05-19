@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPGPU_1", "GPGPU_1.vcxproj", "{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Debug|x64.ActiveCfg = Debug|x64
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Debug|x64.Build.0 = Debug|x64
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Debug|x86.ActiveCfg = Debug|Win32
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Debug|x86.Build.0 = Debug|Win32
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Release|x64.ActiveCfg = Release|x64
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Release|x64.Build.0 = Release|x64
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Release|x86.ActiveCfg = Release|Win32
+		{08C9F1D4-FAFD-4624-9DB2-970C3E2C150B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06FBC37B-64A3-473B-A5BD-1C419240C7AB}
+	EndGlobalSection
+EndGlobal

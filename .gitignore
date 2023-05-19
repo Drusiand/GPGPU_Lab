@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.vs/GPGPU_1/v16
+/Debug
+/x64/Debug
+/GPGPU_1.vcxproj.filters
+/GPGPU_1.vcxproj.user
