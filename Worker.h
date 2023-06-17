@@ -10,6 +10,8 @@
 
 #define BUILD_STR "-cl-std=CL2.0" /*Verify OpenCL version!*/
 #define MAT_MUL_FUNC_NAME "MatMul" /*Matrix multiplication function name as it is described in kernel.cl*/
+#define MAT_MUL_LOCAL_FUNC_NAME "MatMulLocal"
+#define WORKGROUP_SIZE 2
 
 using std::vector;
 using std::array;

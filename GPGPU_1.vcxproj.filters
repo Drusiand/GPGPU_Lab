@@ -49,6 +49,9 @@
     <Text Include="outputC.txt">
       <Filter>Data</Filter>
     </Text>
+    <Text Include="outputC_local.txt">
+      <Filter>Data</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="kernel.cl">

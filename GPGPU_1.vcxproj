@@ -160,6 +160,7 @@
     <Text Include="inputA.txt" />
     <Text Include="inputB.txt" />
     <Text Include="outputC.txt" />
+    <Text Include="outputC_local.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

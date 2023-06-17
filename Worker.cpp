@@ -68,7 +68,7 @@ cl_int Worker::Run(const char* aSrc, const char* bSrc, const char* cDst)
 	const int colsB = matrixB.Cols();
 	const int countB = matrixB.Count();
 
-	assert(rowsA == colsB);
+	assert(rowsB == colsA);
 
 	Matrix matrixC;
 	matrixC.CreateFromDims(rowsA, colsB);
@@ -94,10 +94,13 @@ cl_int Worker::Run(const char* aSrc, const char* bSrc, const char* cDst)
 		errCode += kernel.setArg(2, memBufC);
 		errCode += kernel.setArg(3, colsA);
 		errCode += kernel.setArg(4, colsB);
+		errCode += kernel.setArg(5, WORKGROUP_SIZE * colsA * sizeof(double), nullptr);
+		errCode += kernel.setArg(6, WORKGROUP_SIZE * rowsB * sizeof(double), nullptr);
+		errCode += kernel.setArg(7, WORKGROUP_SIZE);
 	}
 	
 	if (errCode == CL_SUCCESS) {
-		errCode = queue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(colsC, rowsC));
+		errCode = queue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(colsC, rowsC), cl::NDRange(WORKGROUP_SIZE, WORKGROUP_SIZE));
 	}
 
 	if (errCode == CL_SUCCESS) {
